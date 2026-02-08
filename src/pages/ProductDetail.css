@@ -19,6 +19,12 @@
   align-items: start;
 }
 
+.detail-gallery-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
 .detail-images {
   width: 100%;
   aspect-ratio: 1 / 1; /* Formato cuadrado perfecto */
@@ -41,6 +47,46 @@
 
 .detail-images:hover img {
   transform: scale(1.05); /* Un pequeño zoom elegante al pasar el mouse */
+}
+
+/* Thumbnails (Miniaturas) */
+.thumbnail-row {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 5px; /* Por si aparece scrollbar */
+}
+
+.thumbnail-btn {
+  border: 2px solid transparent;
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  flex-shrink: 0;
+  transition: border-color 0.2s;
+}
+
+.thumbnail-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.2s;
+}
+
+.thumbnail-btn:hover {
+    border-color: #ccc;
+}
+
+.thumbnail-btn.active {
+  border-color: var(--primary-color);
+}
+
+.thumbnail-btn.active img {
+    opacity: 0.8;
 }
 
 .detail-info h1 {
@@ -182,5 +228,33 @@
   .detail-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+  
+  .detail-info h1 {
+      font-size: 2rem;
+  }
+
+  .thumbnail-row {
+      justify-content: center; /* Centrar miniaturas en móvil */
+  }
+
+  .size-options {
+      flex-direction: column; /* Botones de tamaño apilados en móvil para fácil toque */
+  }
+  
+  .size-btn {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 1.5rem;
+  }
+  
+  .size-btn span {
+      margin-top: 0;
+  }
+  
+  .recommendations-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columnas en reco movil */
+      gap: 1rem;
   }
 }

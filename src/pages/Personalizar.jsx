@@ -77,8 +77,9 @@ export const Personalizar = () => {
               value={formData.tamano} 
               onChange={handleChange}
             >
-              <option value="Mediana">Mediana ($20.000)</option>
-              <option value="Grande">Grande ($25.000)</option>
+              <option value="Pequeña">Pequeña</option>
+              <option value="Mediana">Mediana</option>
+              <option value="Grande">Grande</option>
             </select>
           </div>
 

@@ -8,6 +8,7 @@ export const ProductDetail = () => {
   const product = products.find(p => p.id === parseInt(id))
   
   const [selectedSize, setSelectedSize] = useState('mediana')
+  const [currentImage, setCurrentImage] = useState(product ? product.image : '')
 
   // Lógica para recomendaciones aleatorias (evita cambiar al cambiar tamaño)
   const recommendations = useMemo(() => {
@@ -32,8 +33,24 @@ export const ProductDetail = () => {
       <Link to="/catalogo" className="back-link">← Volver al Catálogo</Link>
       
       <div className="detail-grid">
-        <div className="detail-images">
-          <img src={product.image} alt={product.name} className="main-detail-img" />
+        <div className="detail-gallery-container">
+          <div className="detail-images">
+            <img src={currentImage} alt={product.name} className="main-detail-img" />
+          </div>
+          
+          {product.gallery && product.gallery.length > 0 && (
+            <div className="thumbnail-row">
+              {product.gallery.map((img, index) => (
+                <button 
+                  key={index} 
+                  className={`thumbnail-btn ${currentImage === img ? 'active' : ''}`}
+                  onClick={() => setCurrentImage(img)}
+                >
+                  <img src={img} alt={`Vista ${index + 1}`} />
+                </button>
+              ))}
+            </div>
+          )}
         </div>
         
         <div className="detail-info">
@@ -45,6 +62,13 @@ export const ProductDetail = () => {
           <div className="size-selector">
             <h3>Elige el tamaño:</h3>
             <div className="size-options">
+              <button 
+                className={`size-btn ${selectedSize === 'pequena' ? 'active' : ''}`}
+                onClick={() => setSelectedSize('pequena')}
+              >
+                Pequeña
+                <span>$15.000</span>
+              </button>
               <button 
                 className={`size-btn ${selectedSize === 'mediana' ? 'active' : ''}`}
                 onClick={() => setSelectedSize('mediana')}
@@ -77,7 +101,7 @@ export const ProductDetail = () => {
                         <img src={rec.image} alt={rec.name} />
                     </div>
                     <h4>{rec.name}</h4>
-                    <p className="rec-price">Desde ${rec.prices.mediana.toLocaleString()}</p>
+                    <p className="rec-price">Desde ${rec.prices.pequena.toLocaleString()}</p>
                 </Link>
             ))}
         </div>

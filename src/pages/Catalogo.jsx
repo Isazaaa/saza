@@ -46,7 +46,7 @@ export const Catalogo = () => {
             </div>
             <div className="product-info">
               <h3>{product.name}</h3>
-              <p className="price">Desde ${product.prices.mediana.toLocaleString()}</p>
+              <p className="price">Desde ${product.prices.pequena.toLocaleString()}</p>
               <Link to={`/producto/${product.id}`} className="btn-add">Ver Detalle</Link>
             </div>
           </div>
