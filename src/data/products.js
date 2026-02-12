@@ -19,14 +19,45 @@ export const products = [
     gallery: ['/deadpool.jpeg', '/deadpool2.jpeg', '/deadpool3.jpeg', '/deadpool4.jpeg'],
     description: 'El mercenario bocazas ahora cuida tus ahorros. Pintado a mano con máximo detalle.'
   },
+
+
+
+{
+    id: 7,
+    name: 'Marranito Floral',
+    prices: { pequena: 20000, mediana: 25000, grande: 30000 },
+    category: 'Animales',
+    image: '/flores.jpeg', 
+    hoverImage: '/flores2.jpeg',
+    gallery: ['/flores.jpeg', '/flores2.jpeg', '/flores3.jpeg'],
+    description: 'Diseño elegante con flores coloridas. Perfecto para decorar cualquier espacio.'
+  },
+
+
+
+  
+  {
+    id: 8,
+    name: 'Alcancía Rapunzel',
+    prices: { pequena: 20000, mediana: 25000, grande: 30000 },
+    category: 'Personajes',
+    image: '/rapunzel.jpeg', 
+    hoverImage: '/rapunzel2.jpeg',
+    gallery: ['/rapunzel.jpeg', '/rapunzel2.jpeg', '/rapunzel3.jpeg'],
+    description: 'La princesa de la torre con su largo cabello dorado. Mágica y encantadora.'
+  },
+
+
+
+
   {
     id: 3,
     name: 'Marranito Kiss',
     prices: { pequena: 20000, mediana: 25000, grande: 30000 },
     category: 'Superhéroes',
-    image: '/ghostface.jpeg',
-    hoverImage: '/ghostface2.jpeg',
-    gallery: ['/ghostface.jpeg', '/ghostface2.jpeg'],
+    image: '/monito.jpg',
+    hoverImage: '/monito.jpg',
+    gallery: ['/monito.jpg', ''],
     description: 'Rockea y ahorra con esta edición especial de Kiss.'
   },
   {
@@ -34,9 +65,9 @@ export const products = [
     name: 'Alcancía Vaquita',
     prices: { pequena: 20000, mediana: 25000, grande: 30000 },
     category: 'Animales',
-    image: '/vaca.jpeg', 
-    hoverImage: '/vaca.jpeg',
-    gallery: ['/vaca.jpeg'],
+    image: '/gatopaloma.jpg', 
+    hoverImage: '/gatopaloma.jpg',
+    gallery: ['/gatopaloma.jpg'],
     description: 'El clásico diseño de vaquita adorable. Un toque granjero para tus ahorros.'
   },
   {
@@ -59,26 +90,7 @@ export const products = [
     gallery: ['/pua.jpeg'],
     description: 'El fiel compañero de Moana. Tierno incondicional.'
   },
-  {
-    id: 7,
-    name: 'Marranito Floral',
-    prices: { pequena: 20000, mediana: 25000, grande: 30000 },
-    category: 'Animales',
-    image: '/flores.jpeg', 
-    hoverImage: '/flores2.jpeg',
-    gallery: ['/flores.jpeg', '/flores2.jpeg', '/flores3.jpeg'],
-    description: 'Diseño elegante con flores coloridas. Perfecto para decorar cualquier espacio.'
-  },
-  {
-    id: 8,
-    name: 'Alcancía Rapunzel',
-    prices: { pequena: 20000, mediana: 25000, grande: 30000 },
-    category: 'Personajes',
-    image: '/rapunzel.jpeg', 
-    hoverImage: '/rapunzel2.jpeg',
-    gallery: ['/rapunzel.jpeg', '/rapunzel2.jpeg', '/rapunzel3.jpeg'],
-    description: 'La princesa de la torre con su largo cabello dorado. Mágica y encantadora.'
-  },
+  
   {
     id: 9,
     name: 'Alcancía Spiderman',
