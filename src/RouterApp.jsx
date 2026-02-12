@@ -9,7 +9,7 @@ import { Contacto } from './pages/Contacto'
 
 export const RouterApp = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter> 
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />

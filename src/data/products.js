@@ -2,7 +2,7 @@ export const products = [
   {
     id: 1,
     name: 'Alcancía Ghostface',
-    prices: { pequena: 15000, mediana: 20000, grande: 25000 },
+    prices: { pequena: 20000, mediana: 25000, grande: 30000 },
     category: 'Personajes',
     image: '/ghostface.jpeg',
     hoverImage: '/ghostface2.jpeg',
@@ -12,17 +12,17 @@ export const products = [
   {
     id: 2,
     name: 'Cerdo Deadpool',
-    prices: { pequena: 15000, mediana: 20000, grande: 25000 },
+    prices: { pequena: 20000, mediana: 25000, grande: 30000 },
     category: 'Personajes',
-    image: '/ghostface2.jpeg', // Usando placeholders existentes
-    hoverImage: '/ghostface.jpeg',
-    gallery: ['/ghostface2.jpeg', '/ghostface.jpeg'],
+    image: '/deadpool.jpeg',
+    hoverImage: '/deadpool2.jpeg',
+    gallery: ['/deadpool.jpeg', '/deadpool2.jpeg', '/deadpool3.jpeg', '/deadpool4.jpeg'],
     description: 'El mercenario bocazas ahora cuida tus ahorros. Pintado a mano con máximo detalle.'
   },
   {
     id: 3,
     name: 'Marranito Kiss',
-    prices: { pequena: 15000, mediana: 20000, grande: 25000 },
+    prices: { pequena: 20000, mediana: 25000, grande: 30000 },
     category: 'Superhéroes',
     image: '/ghostface.jpeg',
     hoverImage: '/ghostface2.jpeg',
@@ -32,7 +32,7 @@ export const products = [
   {
     id: 4,
     name: 'Alcancía Vaquita',
-    prices: { pequena: 15000, mediana: 20000, grande: 25000 },
+    prices: { pequena: 20000, mediana: 25000, grande: 30000 },
     category: 'Animales',
     image: '/vaca.jpeg', 
     hoverImage: '/vaca.jpeg',
@@ -42,7 +42,7 @@ export const products = [
   {
     id: 5,
     name: 'Payaso Plim Plim',
-    prices: { pequena: 15000, mediana: 20000, grande: 25000 },
+    prices: { pequena: 20000, mediana: 25000, grande: 30000 },
     category: 'Personajes',
     image: '/plim-plim.jpeg', 
     hoverImage: '/plim-plim.jpeg',
@@ -52,7 +52,7 @@ export const products = [
   {
     id: 6,
     name: 'Cerdito Pua (Moana)',
-    prices: { pequena: 15000, mediana: 20000, grande: 25000 },
+    prices: { pequena: 20000, mediana: 25000, grande: 30000 },
     category: 'Personajes',
     image: '/pua.jpeg', 
     hoverImage: '/pua.jpeg',
@@ -62,11 +62,51 @@ export const products = [
   {
     id: 7,
     name: 'Marranito Floral',
-    prices: { pequena: 15000, mediana: 20000, grande: 25000 },
+    prices: { pequena: 20000, mediana: 25000, grande: 30000 },
     category: 'Animales',
     image: '/flores.jpeg', 
-    hoverImage: '/flores.jpeg',
-    gallery: ['/flores.jpeg'],
+    hoverImage: '/flores2.jpeg',
+    gallery: ['/flores.jpeg', '/flores2.jpeg', '/flores3.jpeg'],
     description: 'Diseño elegante con flores coloridas. Perfecto para decorar cualquier espacio.'
+  },
+  {
+    id: 8,
+    name: 'Alcancía Rapunzel',
+    prices: { pequena: 20000, mediana: 25000, grande: 30000 },
+    category: 'Personajes',
+    image: '/rapunzel.jpeg', 
+    hoverImage: '/rapunzel2.jpeg',
+    gallery: ['/rapunzel.jpeg', '/rapunzel2.jpeg', '/rapunzel3.jpeg'],
+    description: 'La princesa de la torre con su largo cabello dorado. Mágica y encantadora.'
+  },
+  {
+    id: 9,
+    name: 'Alcancía Spiderman',
+    prices: { pequena: 20000, mediana: 25000, grande: 30000 },
+    category: 'Superhéroes',
+    image: '/spiderman.jpeg', 
+    hoverImage: '/spiderman.jpeg',
+    gallery: ['/spiderman.jpeg'],
+    description: 'El amigable vecino arácnido. Perfecto para los fans del superhéroe trepamuros.'
+  },
+  {
+    id: 10,
+    name: 'Alcancía Minecraft',
+    prices: { pequena: 20000, mediana: 25000, grande: 30000 },
+    category: 'Personajes',
+    image: '/minecraft.jpeg', 
+    hoverImage: '/minecraft.jpeg',
+    gallery: ['/minecraft.jpeg'],
+    description: 'Diseño pixelado inspirado en el mundo de bloques.'
+  },
+  {
+    id: 11,
+    name: 'Alcancía DIM Medellín',
+    prices: { pequena: 20000, mediana: 25000, grande: 30000 },
+    category: 'Deportes',
+    image: '/medellin.jpeg', 
+    hoverImage: '/medellin.jpeg',
+    gallery: ['/medellin.jpeg'],
+    description: 'Para los verdaderos hinchas del poderoso de la montaña. ¡Dale rojo!'
   },
 ]

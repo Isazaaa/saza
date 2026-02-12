@@ -1,5 +1,5 @@
 import { useParams, Link } from 'react-router-dom'
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import { products } from '../data/products'
 import './ProductDetail.css'
 
@@ -9,6 +9,14 @@ export const ProductDetail = () => {
   
   const [selectedSize, setSelectedSize] = useState('mediana')
   const [currentImage, setCurrentImage] = useState(product ? product.image : '')
+
+  // Actualizar la imagen cuando cambia el producto
+  useEffect(() => {
+    if (product) {
+      setCurrentImage(product.image)
+      setSelectedSize('mediana')
+    }
+  }, [id, product])
 
   // Lógica para recomendaciones aleatorias (evita cambiar al cambiar tamaño)
   const recommendations = useMemo(() => {
@@ -67,21 +75,21 @@ export const ProductDetail = () => {
                 onClick={() => setSelectedSize('pequena')}
               >
                 Pequeña
-                <span>$15.000</span>
+                <span>$20.000</span>
               </button>
               <button 
                 className={`size-btn ${selectedSize === 'mediana' ? 'active' : ''}`}
                 onClick={() => setSelectedSize('mediana')}
               >
                 Mediana
-                <span>$20.000</span>
+                <span>$25.000</span>
               </button>
               <button 
                 className={`size-btn ${selectedSize === 'grande' ? 'active' : ''}`}
                 onClick={() => setSelectedSize('grande')}
               >
                 Grande
-                <span>$25.000</span>
+                <span>$30.000</span>
               </button>
             </div>
           </div>
@@ -96,12 +104,21 @@ export const ProductDetail = () => {
         <h2>También te podría gustar</h2>
         <div className="recommendations-grid">
             {recommendations.map(rec => (
-                <Link to={`/producto/${rec.id}`} key={rec.id} className="rec-card" onClick={() => window.scrollTo(0, 0)}>
-                    <div className="rec-image">
-                        <img src={rec.image} alt={rec.name} />
+                <Link 
+                  to={`/producto/${rec.id}`} 
+                  key={rec.id} 
+                  className="rec-card" 
+                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                >
+                    <div className="rec-image-wrapper">
+                      <img src={rec.image} alt={rec.name} className="rec-img-main" />
+                      {rec.hoverImage && <img src={rec.hoverImage} alt={rec.name} className="rec-img-hover" />}
                     </div>
-                    <h4>{rec.name}</h4>
-                    <p className="rec-price">Desde ${rec.prices.pequena.toLocaleString()}</p>
+                    <div className="rec-info">
+                      <h4>{rec.name}</h4>
+                      <p className="rec-category">{rec.category}</p>
+                      <p className="rec-price">Desde ${rec.prices.pequena.toLocaleString()}</p>
+                    </div>
                 </Link>
             ))}
         </div>
