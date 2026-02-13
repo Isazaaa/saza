@@ -47,37 +47,14 @@ export const products = [
     description: 'La princesa de la torre con su largo cabello dorado. Mágica y encantadora.'
   },
 
-
-
-
-  {
-    id: 3,
-    name: 'Marranito Kiss',
-    prices: { pequena: 20000, mediana: 25000, grande: 30000 },
-    category: 'Superhéroes',
-    image: '/monito.jpg',
-    hoverImage: '/monito.jpg',
-    gallery: ['/monito.jpg', ''],
-    description: 'Rockea y ahorra con esta edición especial de Kiss.'
-  },
-  {
-    id: 4,
-    name: 'Alcancía Vaquita',
-    prices: { pequena: 20000, mediana: 25000, grande: 30000 },
-    category: 'Animales',
-    image: '/gatopaloma.jpg', 
-    hoverImage: '/gatopaloma.jpg',
-    gallery: ['/gatopaloma.jpg'],
-    description: 'El clásico diseño de vaquita adorable. Un toque granjero para tus ahorros.'
-  },
   {
     id: 5,
     name: 'Payaso Plim Plim',
     prices: { pequena: 20000, mediana: 25000, grande: 30000 },
     category: 'Personajes',
     image: '/plim-plim.jpeg', 
-    hoverImage: '/plim-plim.jpeg',
-    gallery: ['/plim-plim.jpeg'],
+    hoverImage: '/plim-plim2.jpeg',
+    gallery: ['/plim-plim.jpeg', '/plim-plim2.jpeg'],
     description: 'El héroe del corazón. Ideal para los más pequeños de la casa.'
   },
   {
@@ -91,6 +68,30 @@ export const products = [
     description: 'El fiel compañero de Moana. Tierno incondicional.'
   },
   
+  
+
+
+
+  {
+    id: 3,
+    name: 'Teamo amor',
+    prices: { pequena: 20000, mediana: 25000, grande: 30000 },
+    category: 'Superhéroes',
+    image: '/monito.jpg',
+    hoverImage: '/monito.jpg',
+    gallery: ['/monito.jpg', ''],
+    description: 'Rockea y ahorra con esta edición especial de Kiss.'
+  },
+  {
+    id: 4,
+    name: 'awo',
+    prices: { pequena: 20000, mediana: 25000, grande: 30000 },
+    category: 'Animales',
+    image: '/gatopaloma.jpg', 
+    hoverImage: '/gatopaloma.jpg',
+    gallery: ['/gatopaloma.jpg'],
+    description: 'El clásico diseño de vaquita adorable. Un toque granjero para tus ahorros.'
+  },
   {
     id: 9,
     name: 'Alcancía Spiderman',
