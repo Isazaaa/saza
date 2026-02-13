@@ -72,26 +72,7 @@ export const products = [
 
 
 
-  {
-    id: 3,
-    name: 'Teamo amor',
-    prices: { pequena: 20000, mediana: 25000, grande: 30000 },
-    category: 'Superhéroes',
-    image: '/monito.jpg',
-    hoverImage: '/monito.jpg',
-    gallery: ['/monito.jpg', ''],
-    description: 'Rockea y ahorra con esta edición especial de Kiss.'
-  },
-  {
-    id: 4,
-    name: 'awo',
-    prices: { pequena: 20000, mediana: 25000, grande: 30000 },
-    category: 'Animales',
-    image: '/gatopaloma.jpg', 
-    hoverImage: '/gatopaloma.jpg',
-    gallery: ['/gatopaloma.jpg'],
-    description: 'El clásico diseño de vaquita adorable. Un toque granjero para tus ahorros.'
-  },
+  
   {
     id: 9,
     name: 'Alcancía Spiderman',
@@ -111,6 +92,28 @@ export const products = [
     hoverImage: '/minecraft.jpeg',
     gallery: ['/minecraft.jpeg'],
     description: 'Diseño pixelado inspirado en el mundo de bloques.'
+  },
+
+
+  {
+    id: 3,
+    name: 'Teamo amor',
+    prices: { pequena: 20000, mediana: 25000, grande: 30000 },
+    category: 'Superhéroes',
+    image: '/monito.jpg',
+    hoverImage: '/monito.jpg',
+    gallery: ['/monito.jpg', ''],
+    description: 'Rockea y ahorra con esta edición especial de Kiss.'
+  },
+  {
+    id: 4,
+    name: 'awo',
+    prices: { pequena: 20000, mediana: 25000, grande: 30000 },
+    category: 'Animales',
+    image: '/gatopaloma.jpg', 
+    hoverImage: '/gatopaloma.jpg',
+    gallery: ['/gatopaloma.jpg'],
+    description: 'El clásico diseño de vaquita adorable. Un toque granjero para tus ahorros.'
   },
   {
     id: 11,
