@@ -16,7 +16,7 @@ export const products = [
     category: 'Personajes',
     image: '/deadpool.jpeg',
     hoverImage: '/deadpool2.jpeg',
-    gallery: ['/deadpool.jpeg', '/deadpool2.jpeg', '/deadpool3.jpeg', '/deadpool4.jpeg'],
+    gallery: ['/deadpool.jpeg', '/deadpool2.jpeg', '/deadpool3.jpeg', '/deadpool4.jpeg', '/deadpool5.jpeg'],
     description: 'El mercenario bocazas ahora cuida tus ahorros. Pintado a mano con máximo detalle.'
   },
 
@@ -107,7 +107,7 @@ export const products = [
   },
   {
     id: 4,
-    name: 'awo',
+    name: 'Eres la mejor mi amor',
     prices: { pequena: 20000, mediana: 25000, grande: 30000 },
     category: 'Animales',
     image: '/gatopaloma.jpg', 
